@@ -9,7 +9,7 @@ const initPG = () => {
   console.log('pgUrl', pgUrl)
   pool = new pg.Pool({ 
     connectionString: pgUrl,
-    ssl: { rejectUnauthorized: true }
+    ssl: { rejectUnauthorized: false }
     
   })
   return pool
